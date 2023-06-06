@@ -11,28 +11,410 @@
     <link rel="shortcut icon" href="./img/boot.png" type="image/x-icon">
     <!-- Css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./scss/magnific-popup.scss">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>Trekking</title>
 </head>
 
 <body>
-    <h1>Hello Git</h1>
     <div class="box">
         <header class="header">
     <div class="container">
-        <div class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, maxime!
+        <nav class="nav">
+            <div class="nav-group">
+                <a href="">
+                    <img src="../img/Logo.png" alt="bg-img">
+                </a>
+                <ul class="menu-list">
+                    <li>
+                        <a class="lng-home" href="">Home</a>
+                    </li>
+                    <li>
+                        <a class="lng-product">Products</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../img/basket.png" alt="basket">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="group">
+                <select class="change-lang select">
+                    <option value="ua" selected>UA</option>
+                    <option value="en">EN</option>
+                </select>
+                <div class="burger"></div>
+            </div>
+        </nav>
+        <div class="burger-menu">
+    <ul class="menu-second">
+        <li>
+            <a class="lng-homes" href="">Home</a>
+        </li>
+        <li>
+            <a class="lng-products" href="">Products</a>
+        </li>
+        <li>
+            <a href="">
+                <img src="../img/basket.png" alt="basket">
+            </a>
+        </li>
+    </ul>
+</div>
+        <div class="heading">
+            <h1 class="heading__title lng-title">Our clothing , your comfort</h1>
+            <div class="heading__main-text">
+                <p class="heading__text lng-text">Everything for your adventures from the best manufacturers. The most
+                    popular
+                    brands. The best quality. Wide assortment Current availability Fast delivery. Promotional goods.</p>
+            </div>
+        </div>
+        <div class="arrow__down">
+            <img src="../img/arrow-down.png" alt="arrow-down">
         </div>
     </div>
 </header>
-        
-        
-        <!-- <a href="#header" class="top">
-        <img src="./img/up.png" alt="">
-    </a> -->
+        <main class="main">
+    <div class="container">
+        <div class="popup">
+    <form class="popup-menu">
+        <div class="popup-close scroll-on">
+            <img class="pop-close  close-popup" src="./img/close.svg" alt="burger">
+        </div>
+        <div class="pop-box">
+            <h2 class="lng-poptitle">Register to see more</h2>
+            <div class="popup-input">
+                <p class="lng-login">Your login</p>
+                <input class="popup-inp" type="text" placeholder="login">
+                <p class="lng-password">Your password</p>
+                <input class="popup-inp" type="password" placeholder="password">
+            </div>
+            <div class="popup-check">
+                <input type="checkbox">
+                <p class="lng-data">Confirm data</p>
+            </div>
+            <button class="lng-send">send</button>
+        </div>
+    </form>
+</div>
+        <div class="categories__box">
+            <div class="categories">
+                <label data-f="Men" class="categories__input">
+                    <input class="categories__check" type="checkbox">
+                    <span class="categories__fake"></span>
+                    <span for="Men" class="categories__text lng-men">Men</span>
+                </label>
+                <label data-f="WoMen" class="categories__input">
+                    <input class="categories__check" type="checkbox">
+                    <span class="categories__fake"></span>
+                    <span for="WoMen" class="categories__text lng-women">WoMen</span>
+                </label>
+                <label data-f="children" class="categories__input">
+                    <input class="categories__check" type="checkbox">
+                    <span class="categories__fake"></span>
+                    <span for="children" class="categories__text lng-children">children</span>
+                </label>
+            </div>
+            <div class="categories__button scroll-off">
+                <button class="categories__btn open-popup lng-see">see all products</button>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="block__man block Men">
+                <div class="gallery__content">
+                    <p class="gallery__sex lng-sex">men</p>
+                    <div class="gallery__line"></div>
+                </div>
+                <div class="slider">
+                    <a href="../img/polo-men.png" title="T-shirt 5,00 €">
+                        <div class="slider__card ">
+                            <div class="slider__top">
+                                <select class="slider__option" name="size">
+                                    <option class="lng-size1" value="Please">size</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S ">S </option>
+                                    <option value="М">М</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                                <div class="slider__color">
+                                    <div class="slider__blue"></div>
+                                    <div class="slider__yellow"></div>
+                                    <div class="slider__black"></div>
+                                </div>
+                            </div>
+                            <div class="slider__img slider__pd-1">
+                                <img src="../img/polo-men.png" alt="shirt">
+                            </div>
+                            <div class="slider__bottom slider__bottom-1">
+                                <p class="slider__name lng-shirt">T-shirt</p>
+                                <p class="slider__price">5,00 €</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../img/trousers.png" title="Pants FORCLAZ 30,00 €">
+                        <div class="slider__card ">
+                            <div class="slider__top">
+                                <select class="slider__option" name="size">
+                                    <option class="lng-size2" value="Please">size</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S ">S </option>
+                                    <option value="М">М</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                            </div>
+                            <div class="slider__img slider__pd-2">
+                                <img src="../img/trousers.png" alt="trousers">
+                            </div>
+                            <div class="slider__bottom slider__bottom-2">
+                                <p class="slider__name lng-pants">Pants FORCLAZ</p>
+                                <p class="slider__price">30,00 €</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../img/backpak.png" title="backpack 60,00 €">
+                        <div class="slider__card ">
+                            <div class="slider__top">
+                                <p class="slider__litr lng-litri">10 litri</p>
+                            </div>
+                            <div class="slider__img slider__pd-3">
+                                <img src="../img/backpak.png" alt="backpak">
+                            </div>
+                            <div class="slider__bottom slider__bottom-1">
+                                <p class="slider__name lng-backpack">backpack</p>
+                                <p class="slider__price">60,00 €</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../img/polo-men.png" title="T-shirt 5,00 €">
+                        <div class="slider__card ">
+                            <div class="slider__top">
+                                <select class="slider__option" name="size">
+                                    <option class="lng-size3" value="Please">size</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S ">S </option>
+                                    <option value="М">М</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                                <div class="slider__color">
+                                    <div class="slider__blue"></div>
+                                    <div class="slider__yellow"></div>
+                                    <div class="slider__black"></div>
+                                </div>
+                            </div>
+                            <div class="slider__img slider__pd-1">
+                                <img src="../img/polo-men.png" alt="shirt">
+                            </div>
+                            <div class="slider__bottom slider__bottom-1">
+                                <p class="slider__name lng-shi">T-shirt</p>
+                                <p class="slider__price">5,00 €</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../img/backpak.png" title="backpack 60,00 €">
+                        <div class="slider__card ">
+                            <div class="slider__top">
+                                <p class="slider__litr">10 litri</p>
+                            </div>
+                            <div class="slider__img slider__pd-3">
+                                <img src="../img/backpak.png" alt="backpak">
+                            </div>
+                            <div class="slider__bottom slider__bottom-1">
+                                <p class="slider__name lng-backpack">backpack</p>
+                                <p class="slider__price">60,00 €</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="block__woman block WoMen">
+                <div class="gallery__content gallery__content-3">
+                    <div class="gallery__line"></div>
+                    <p class="gallery__sex lng-womens">women</p>
+                </div>
+                <div class="carusel">
+                    <a href="../img/jacket.png" title="Giacket 60,00 €">
+                        <div class="slider__card ">
+                            <div class="slider__top">
+                                <select class="slider__option" name="size">
+                                    <option class="lng-size4" value="Please">size</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S ">S </option>
+                                    <option value="М">М</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                            </div>
+                            <div class="slider__img slider__pd-4">
+                                <img src="../img/jacket.png" alt="jacket">
+                            </div>
+                            <div class="slider__bottom slider__bottom-4">
+                                <p class="slider__name lng-giacket">Giacket</p>
+                                <p class="slider__price">60,00 €</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../img/boots.png" title="trekking shoest 80,00 €">
+                        <div class="slider__card ">
+                            <div class="slider__top">
+                                <select class="slider__option" name="size">
+                                    <option class="lng-size5" value="Please">size</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S ">S </option>
+                                    <option value="М">М</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                            </div>
+                            <div class="slider__img slider__pd-5">
+                                <img src="../img/boots.png" alt="boots">
+                            </div>
+                            <div class="slider__bottom slider__bottom-5">
+                                <p class="slider__name lng-trekking">trekking shoest</p>
+                                <p class="slider__price">80,00 €</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../img/polo-woman.png" title="T-shirt 20,00 €">
+                        <div class="slider__card ">
+                            <div class="slider__top">
+                                <select class="slider__option" name="size">
+                                    <option class="lng-size6" value="Please">size</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S ">S </option>
+                                    <option value="М">М</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                                <div class="slider__color slider__second">
+                                    <div class="slider__pink"></div>
+                                    <div class="slider__white"></div>
+                                </div>
+                            </div>
+                            <div class="slider__img slider__pd-6">
+                                <img src="../img/polo-woman.png" alt="shirt">
+                            </div>
+                            <div class="slider__bottom slider__bottom-6">
+                                <p class="slider__name lng-shir">T-shirt</p>
+                                <p class="slider__price">20,00 €</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../img/jacket.png" title="Giacket 60,00 €">
+                        <div class="slider__card ">
+                            <div class="slider__top">
+                                <select class="slider__option" name="size">
+                                    <option class="lng-size7" value="Please">size</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S ">S </option>
+                                    <option value="М">М</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                            </div>
+                            <div class="slider__img slider__pd-4">
+                                <img src="../img/jacket.png" alt="jacket">
+                            </div>
+                            <div class="slider__bottom slider__bottom-4">
+                                <p class="slider__name">Giacket</p>
+                                <p class="slider__price">60,00 €</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../img/boots.png" title="trekking shoest 80,00 €">
+                        <div class="slider__card ">
+                            <div class="slider__top">
+                                <select class="slider__option" name="size">
+                                    <option class="lng-size8" value="Please">size</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S ">S </option>
+                                    <option value="М">М</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                            </div>
+                            <div class="slider__img slider__pd-5">
+                                <img src="../img/boots.png" alt="boots">
+                            </div>
+                            <div class="slider__bottom slider__bottom-5">
+                                <p class="slider__name lng-trek">trekking shoes</p>
+                                <p class="slider__price">80,00 €</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-    <script src="./js/script.js"></script>
+    <div class="about">
+        <div class="about__content">
+            <div class="about__border">
+                <div class="about__title">
+                    <h2 class="lng-about">about us</h2>
+                </div>
+                <div class="about__text lng-us">
+                    Quality travel clothing that allows you to feel comfortable in any climate, at a reasonable price.
+                    Great selection only here.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trailer">
+        <div class="trailer__box">
+            <div class="trailer__twitter">
+                <a href="https://twitter.com/"><img src="../img/twitter.png" alt="twitter"></a>
+            </div>
+            <p class="lng-twitter">“E-commerce psd theme available”</p>
+        </div>
+    </div>
+</main>
+        <footer>
+    <div class="footer">
+        <div class="footer__box">
+            <div class="footer__box-1">
+                <h2 class="lng-treking">Trekking</h2>
+                <p class="lng-abouttr">In tourist clothes, you can theoretically see three layers: lower, middle and
+                    upper. The
+                    bottom layer
+                    is underwear. This is something that is closer to the body, so it should be as convenient and
+                    comfortable as possible.</p>
+            </div>
+            <div class="footer__box-2">
+                <ul>
+                    <li>
+                        <a class="lng-credits" href="#">credits</a>
+                    </li>
+                    <li>
+                        <a class="lng-privacy" href="#">Privacy </a>
+                    </li>
+                    <li>
+                        <a class="lng-abouts" href="#">about</a>
+                    </li>
+                    <li>
+                        <a class="lng-contact" href="#">contact</a>
+                    </li>
+                </ul>
+                <p class="lng-desiner">Design by gianluca cosetta</p>
+            </div>
+        </div>
+    </div>
+</footer>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="./js/jquery.magnific-popup.min.js"></script>
+        <script src="./js/script.js"></script>
+    </div>
 </body>
 
 </html>
